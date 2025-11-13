@@ -36,17 +36,42 @@
             <li><a class="nav-link-contact link-hover link-focus" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button class="nav-menu-button" data-modal-menu-open><svg class="burger-icon" width="24" height="24"><use href="./images/icons.svg#icon-burger-menu"></use></svg></button>
+      </div>
+      <div class="modal-nav-menu" data-modal-menu>
+        <div class="mobile-box container">
+          <button class="close-button" data-modal-menu-close><svg class="modal-icon_close" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg></button>
+          <nav class="nav-menu">
+            <ul class="nav-link_list-menu">
+                <li><a class="nav-link-menu link-hover link-focus" href="./index.html">Studio</a></li>
+                <li><a class="nav-link-menu link-hover link-focus" href="">Portfolio</a></li>
+                <li><a class="nav-link-menu link-hover link-focus" href="">Contacts</a></li>
+              </ul>
+          </nav>
+            <address class="contact-info-menu">
+            <ul class="contact-info_list ">
+              <li><a class="nav-link-contact link-hover link-focus" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="nav-link-contact link-hover link-focus" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+          <ul class="icon-list">
+                       <li class="list-icon-element"><a class="link" href="#"><svg class="icon icon_effect" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
+                       <li class="list-icon-element"><a class="link" href="#"><svg class="icon icon_effect" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
+                       <li class="list-icon-element"><a class="link" href="#"><svg class="icon icon_effect" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg></a></li>
+                       <li class="list-icon-element"><a class="link" href="#"><svg class="icon icon_effect" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
+                      </ul>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="title">
+      <section class="title hidden">
         <div class="container container-flex">
           <h1 class="general-title">Effective Solutions for Your Business</h1>
           <button class="title-button" data-modal-open >Order Service</button>
         </div>
       </section>
-      <section class="padding-for-section">
+      <section class="padding-for-section hidden">
         <div class="container">
           <h2 class="visually-hidden">About Our Work</h2>
           <ul class="our-work-box_style">
@@ -89,7 +114,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team-section padding-for-section">
+      <section class="our-team-section padding-for-section hidden">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="align-center">
@@ -156,7 +181,7 @@
           </ul>
         </div>
       </section>
-      <section class="padding-for-section">
+      <section class="padding-for-section hidden">
         <div class="container">
           <h2 class="about-our-portfolio-title">Our Portfolio</h2>
           <ul class="about-our-portfolio_list">
@@ -225,7 +250,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container flex-for-footer">
+      <div class="container flex-for-footer hidden">
         <div class="footer-child">
           <a class="logo footer-logo" href="./index.html">Web<span class="logo-span-footer">Studio</span></a>
           <p class="footer-description">
@@ -254,7 +279,7 @@
       </div>
       </div>
     </footer>
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
         <div class="modal">
           <button class="close-button" type="button" data-modal-close><svg class="modal-icon_close" width="8" height="8"><use href="./images/icons.svg#icon-close"></use></svg></button>
           <p class="modal-info">Leave your contacts and we will call you back</p>
@@ -298,6 +323,6 @@
           </form>
         </div>
       </div>
-      <script src="./js/modal.js"></script>
+      <script src="./js/modal-menu.js"></script>
   </body>
 </html>
