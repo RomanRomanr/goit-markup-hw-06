@@ -298,7 +298,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
 }
 .title{
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), image-set(url(../images/people-office.jpg) 1x, url(../images/people-office@2x.jpg) 2x);
+
   max-width: 1440px;
   background-size: cover;
   background-position: center;
@@ -554,9 +555,6 @@ color: var(--iris);
 .image_box{
   display: none;
 }
-.our-work-box_style_list{
-
-}
 .padding-for-section{
 padding-top: 96px;
 padding-bottom: 96px;
@@ -592,6 +590,7 @@ color: var(--slate);
   margin-top: 8px;
 }
 .icon-list-menu{
+  margin-top: 44px;
   gap: 40px;
 }
 .our-team-section{
@@ -739,21 +738,14 @@ max-width: 264px;
   display: inline-block;
   align-self: center;
 }
-footer a{
-  /* margin-bottom: 16px; */
-}
 .flex-for-footer{
   display: flex;
   flex-direction: column;
   gap: 70px;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
 }
 .footer-child{
 display: flex;
 flex-direction: column;
-/* align-items: center; */
-  /* margin-right: 120px; */
 }
 .social_media{
   display: flex;
@@ -780,9 +772,6 @@ margin-bottom: 16px;
 .social_media .link:focus{
   background-color: var(--green);
 }
-.footer_form_box {
-  /* margin-left: 80px; */
-}
 
 .footer-form-title{
   text-align: center;
@@ -795,12 +784,6 @@ letter-spacing: 0.02em;
 color: var(--white);
 
 }
-/* .box-for-input-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-} */
 .footer-input {
   border: 1px solid var(--white);
 border-radius: 4px;
@@ -866,13 +849,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--ocean);
 }
 
-
-/* @media screen and (min-width: 768px) {
-    .modal-nav-menu, .nav-menu-button {
-        display: none;
-    
-    }
-} */
 /* header for tablet */
 @media screen and (min-width: 768px) {
   .modal-nav-menu, .nav-menu-button {
